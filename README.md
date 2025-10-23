@@ -1,4 +1,4 @@
 # COS285Lab4
-Ryan
+Ryan Bisson
 Jake Shaw
 Austin Levesque
