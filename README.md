@@ -1,5 +1,3 @@
 # COS285Lab4
-Lab 4 for COS285 Datastructures
-
-Team members:
 Jake Shaw
+Austin Levesque
