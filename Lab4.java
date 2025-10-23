@@ -1,4 +1,3 @@
-package lab4;
 
 import java.util.*;
 import java.io.*;
@@ -22,6 +21,9 @@ public class Lab4 {
         
         // Add the data to the tree.
         tree.buildTree(data);
+
+        System.out.println("Breadth First Search traversal:");
+        tree.bfsPrintTree();
 
     }
 

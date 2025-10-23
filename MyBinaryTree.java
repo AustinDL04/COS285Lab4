@@ -1,5 +1,3 @@
-package lab4;
-
 import java.util.*;
 
 /**Creates a MyBinaryTree object that stores unsorted nodes in a binary tree.
@@ -58,4 +56,30 @@ public class MyBinaryTree<E extends Comparable<E>> {
             insert(element);
         }
     }
+
+
+    /*
+     *breadth first search
+     */
+    public void bfsPrintTree() {
+        if (root == null) {
+            return;
+        }
+
+        Queue<Node<E>> q = new ArrayDeque<>();
+        q.add(root);
+
+        System.out.print("Breadth-First Search Order: ");
+        while (!q.isEmpty()) {
+            Node<E> node = q.remove();
+            System.out.print(node.data + " ");
+            
+            if (node.left != null)
+                q.add(node.left);
+            if (node.right != null)
+                q.add(node.right);
+        }
+        System.out.println();
+    }
+
 }
