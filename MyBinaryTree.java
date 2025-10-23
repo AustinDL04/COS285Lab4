@@ -82,4 +82,24 @@ public class MyBinaryTree<E extends Comparable<E>> {
         System.out.println();
     }
 
+    /*
+     *Find Method
+     */
+    public boolean find(E target) {
+        return find(root, target);
+    }
+    
+    private boolean find(Node<E> localroot, E target) {
+        if (localroot == null) {
+            return false;
+        }
+        int cmp = target.compareTo(localroot.data);
+        if (cmp == 0) {
+            return true;
+        }else if(cmp < 0){
+            return find(localroot.left, target);
+        }else{
+            return find(localroot.right, target);
+        }
+    }  
 }
