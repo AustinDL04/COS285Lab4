@@ -24,7 +24,10 @@ public class Lab4 {
 
         System.out.println("Breadth First Search traversal:");
         tree.bfsPrintTree();
-
+       
+        System.out.println("Find method test:");
+        System.out.println(tree.find(12));
+        System.out.println(tree.find(3));
     }
 
     /**Create a List of Integers from a given filepath with data
